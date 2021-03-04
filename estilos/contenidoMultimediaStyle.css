@@ -44,13 +44,6 @@ a,p,li {
     font-size: 0.9em;
 }
 
-.tiposResaltado {
-    background-color: rgb(159, 217, 255);
-    border-radius: 10px;
-    padding: 5px;
-    margin-top: 10px;
-}
-
 #ejemploImagenes {
     display: flex;
     flex-direction: column;
@@ -59,7 +52,8 @@ a,p,li {
 }
 
 #img1 {
-    width: 500px
+    width: 100%;
+    height: auto;
 }
 
 #saltosLinea {
@@ -80,4 +74,26 @@ li {
     background-color: rgb(221, 221, 221);
     cursor: pointer;
     margin-top: 50px;
+}
+
+#ejemploGifs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.gifs {
+    width: 45%;
+    height: auto;
+}
+
+#ejemploMapa {
+    display: flex;
+    flex-direction: row;
+}
+
+#imgMap {
+    width: 100%;
+    height: auto;
 }
