@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual - Elementos semánticos de texto</title>
+    <link rel="stylesheet" type="text/css" href="../estilos/elementosSemanticosTextoStyle.css">
+    <link rel="shortcut icon" href="../Imagenes/manual-icon.png">
+</head>
+<body>
+    <main>
+        <section id="menu">
+            <h2>Menú</h2>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <p></p>
+                <p></p>
+                <a href="elementosBasicos.html">Elementos básicos</a>
+                <p></p>
+                <p></p>
+                <a href="elementosSemanticosTexto.html">Elementos semánticos de texto</a>
+                <p></p>
+                <p></p>
+                <a href="contenidoMultimedia.html">Contenido multimedia</a>
+            </nav>
+            <h2 id="contenidos">Contenidos</h2>
+            <ol id="listaIndice">
+                <li><a href="#resaltado">Resaltado</a></li>
+                <li><a href="#saltosLinea">Saltos de línea</a></li>
+                <li><a href="#enlaces">Hiperenlaces</a></li>
+            </ol>
+        </section>
+
+        <section id="principal">
+            <article id="resaltado">
+                <h2>Resaltado del texto</h2>
+                <p>Hay situaciones en las cuales necesitamos resaltar una parte concreta de nuestro texto la cual
+                    no podemos personalizar por medio de CSS. Para ello usamos una serie de etiquetas que se encargan 
+                    del resaltado de texto justo donde las designamos.
+                </p>
+                <p>Para ello vamos a ver unos ejemplos muy sencillos:</p>
+
+                <h4>Cursiva</h4>
+                <p>El resaltado de texto en cursiva se representa con la etiqueta "i" y debemos colocar dentro de esta
+                    etiqueta el texto que queramos resaltar. Por ejemplo:
+                </p>
+                <div class="tiposResaltado">
+                    <p>Este texto sigue siendo normal pero de repente, <i>este fragmento de aqui cambia a cursiva.</i></p>
+                </div>
+
+                <h4>Negrita</h4>
+                <p>Para resaltar fragmentos de nuestro texto en negrita se necesita la etiqueta "b". Al igual que la etiqueta
+                    de cursiva, debemos colocar nuestro texto dentro de dicha etiqueta. Por ejemplo:
+                </p>
+                <div class="tiposResaltado">
+                    <p>Queremos resaltar el nombre de una persona, por ejemplo, <b>Edgar Sánchez</b> o el de una ciudad, por ejemplo, <b>Barcelona</b>.</p>
+                </div>
+
+                <h4>Subrayado</h4>
+                <p>Para resaltar fragmentos de texto con un subrayado usaremos la etiqueta "u" y de nuevo, pondremos el texto a resaltar
+                    dentro de la etiqueta. Por ejemplo:
+                </p>
+                <div class="tiposResaltado">
+                    <p>En este caso tambien queremos resaltar el nombre de una ciudad o de una persona pero no queremos resaltarlos
+                        en negrita si no que queremos que sea un subrayado: <u>Edgar Sánchez</u> y <u>Barcelona</u>.
+                    </p>
+                </div>
+                
+                <h4>Otros elementos de resaltado</h4>
+                <p>En general, los elementos desarrollados anteriormente son los que mas se solían utilizar en los inicios de la programacion web. 
+                    Tenemos otros elementos de resaltado que son mas correctos para su uso en html y que vamos a explicar brevemente. Dichos elementos son:
+                </p>
+                <div class="tiposResaltado">
+                    <p>STRESS EMPHASIS: se representa con la etiqueta "em" y nos permite añadir énfasis a una parte del texto, por ejemplo: <em>patata</em></p>
+                </div>
+                <div class="tiposResaltado">
+                    <p>STRONG: se representa con la etiqueta "strong" y sirve para recalcar una parte importante o urgente en un documento, por ejemplo: 
+                    <strong>Examen la semana que viene</strong></p>
+                </div>
+                <div class="tiposResaltado">
+                    <p>SMALL: etiqueta para representar la letra pequeña de por ejemplo términos y condiciones de uso de un producto o un contrato, por ejemplo:<br><br>
+                    <small>Al aceptar los términos y condiciones de uso de nuestro producto, nos da permiso para usar sus órganos vitales en caso de que nuestro jefe
+                        se ponga enfermo.
+                    </small>
+                    </p>
+                </div>
+
+                <p>Como curiosidad, nos podemos fijar en que las etiquetas de "STRESS EMPHASIS" y "STRONG" hacen la misma funcion que las etiquetas "i" y "b". Sin embargo
+                    es solamente visual. Con esto nos referimos a que en la manera en la que el navegador la procesa e interpreta es completamente distinta ya que las etiquetas "i" y "b"
+                    son explícitas, en cambio las etiquetas de "STRESS EMPHASIS" y "STRONG" son semánticas y nos permiten personalizarlas por medio de CSS.
+                </p>
+                <p>En conclusion, las etiquetas "i" y "b" se usaban en el pasado cuando no disponíamos de herramientas de personalización como CSS. Actualmente no son recomendables
+                    usarlas y se sustituyeron por "STRESS EMPHASIS" y "STRONG" ya que la personalizacion de la estructura (HTML) se debe realizar con CSS.
+                </p>
+            </article>
+
+            <article id="saltosLinea">
+                <h2>Saltos de línea</h2>
+                <p>Los saltos de línea son un otro de los elementos enfocados a personalización de texto. Este elemento nos permite generar un salto de línea en nuestro
+                    texto. Es útil para escribir versos de un poema o direcciones, donde la división de lineas es importante.
+                </p>
+                <p>Este elemento se representa con la etiqueta "br". Un dato a recalcar es que este elemento no debe usarse para generar interlineado entre líneas de texto.
+                    Para ello usaremos CSS o la etiqueta "p".
+                </p>
+                <p>Para comprender este elemento veremos un ejemplo muy sencillo de un fragmento del poema "Canción del Pirata" de José de Espronceda:</p>
+                <div id="ejemploBR">
+                    <p>
+                        Con diez cañones por banda,<br>
+                        Viento en popa, a toda vela,<br>
+                        No corta el mar, sino vuela<br>
+                        Un velero bergantín:<br>
+                        Bajel pirata que llaman<br>
+                        Por su bravura el Temido,<br>
+                        En todo el mar conocido<br>
+                        Del uno al otro confín.<br>
+                    </p>
+                </div>
+            </article>
+
+            <article id="enlaces">
+                <h2>Hiperenlaces</h2>
+                <p>Y para terminar, el último elemento que vamos a ver en esta categoria van a ser los hiperenlaces. Los hiperenlaces nos permiten tanto acceder a otras paginas web
+                    como saltar a otro punto dentro de la pagina en la que estamos. Se representan con la etiqueta "a" y adicionalmente con una serie de atributos que pueden ser:
+                </p>
+                <ul id="listaEnlaces">
+                    <li>href: Aquí especificamos la URL.</li>
+                    <li>target: Indica donde se cargará la página y hay 4 valores:</li>
+                        <ul>
+                            <li>_blank: En una nueva pestaña. <a href="https://www.w3schools.com/default.asp" target="_blank">&#62;&#62; Ejemplo &#60;&#60;</a></li>
+                            <li>_parent: En la ventana que contiene la pestaña actual. <a href="https://www.w3schools.com/default.asp" target="_parent">&#62;&#62; Ejemplo &#60;&#60;</a></li>
+                            <li>_self: En la pestaña actual. <a href="https://www.w3schools.com/default.asp" target="_self">&#62;&#62; Ejemplo &#60;&#60;</a></li>
+                            <li>_top: En la ventana principal. <a href="https://www.w3schools.com/default.asp" target="_top">&#62;&#62; Ejemplo &#60;&#60;</a></li>
+                        </ul>
+                </ul>
+            </article>
+            <div id="btn"><a href="#resaltado">Vuelve al principio</a></div>
+        </section>
+    </main>
+</body>
+</html>
