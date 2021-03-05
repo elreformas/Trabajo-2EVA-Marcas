@@ -55,7 +55,7 @@ a:hover {
     padding: 5px;
 }
 
-#ejemploTablas {
+#ejemploListas {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -93,9 +93,63 @@ a,p,li {
     border-radius: 10px;
     background-color: rgb(221, 221, 221);
     cursor: pointer;
+    margin-top: 50px;
 }
 
 li {
     margin-bottom: 10px;
 }
+
+/* Separacion entre estilos de todo el documento en general y de la tabla */
+
+thead {
+    background-color: salmon;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    font-weight: bold;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.celdaBD {
+    background-color: rgb(0, 153, 255);
+}
+
+.celdaLM {
+    background-color: rgb(250, 148, 52);
+}
+
+.celdaPRO {
+    background-color: rgb(82, 255, 47);
+}
+
+.celdaED {
+    background-color: rgb(255, 36, 36);
+}
+
+.celdaIN {
+    background-color: rgb(192, 0, 192);
+}
+
+.celdaSI {
+    background-color: yellow;
+}
+
+.celdaFOL {
+    background-color: rgb(129, 70, 21);
+}
+
+.neutro {
+    background-color: salmon;
+}
+
 

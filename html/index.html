@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual - Inicio</title>
+    <link rel="stylesheet" type="text/css" href="../estilos/indexStyle.css"> <!-- Link a la hoja de estilos que se debe aplicar a este documento. -->
     <link rel="shortcut icon" href="../Imagenes/manual-icon.png">
 </head>
 <body>
-    <nav>
-        <a href="elementosBasicos.html">Elementos básicos</a>
-    </nav>
+    <main> <!-- Dividimos el main en dos contenedores: el section con id "menu" y el section con id "principal"-->
+        <section id="menu"> <!-- Este section contiene el menu que lleva a cada pagina y los indices correspondientes de la pagina en la que te encuentras -->
+            <h2>Menú</h2>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <p></p>
+                <p></p>
+                <a href="elementosBasicos.html">Elementos básicos</a>
+                <p></p>
+                <p></p>
+                <a href="elementosSemanticosTexto.html">Elementos semánticos de texto</a>
+                <p></p>
+                <p></p>
+                <a href="contenidoMultimedia.html">Contenido multimedia</a>
+            </nav>
+        </section>
 
-    <p>En este manual de instrucciones vamos a explicar y mostrar<br>
-        todas y cada una de la caracteristicas de un documento HTML y CSS.</p>
-    
+        <section id="principal"> <!-- Este section se encarga del resto de contenido de la pagina. -->
+            <h2>Manual de HTML</h2>
+            <p>En este manual vamos a explicar de forma sencilla los principales elementos que se han dado en esta evaluación
+                en la asignatura de Lenguajes de Marcas. Espero que las explicaciones en cada apartado sean entendibles y fáciles de comprender.
+            </p>
+            <p>El software que se ha usado para realizar este manual ha sido Visual Studio Code. Visualmente esta página se ha basado en la página web que muestra el manual
+                de instrucciones de Git.
+            </p>
+            <img id="portada" src="../Imagenes/portada.jpg">
+        </section>
+    </main>
 </body>
 </html>

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual - Elementos básicos</title>
-    <link rel="stylesheet" type="text/css" href="../estilos/elementosBasicosStyle.css">
+    <link rel="stylesheet" type="text/css" href="../estilos/elementosBasicosStyle.css"> <!-- Link a la hoja de estilos que se debe aplicar a este documento. -->
     <link rel="shortcut icon" href="../Imagenes/manual-icon.png">
 </head>
 <body> 
-    <main>
-        <section id="menu">
+    <main> <!-- Dividimos el main en dos contenedores: el section con id "menu" y el section con id "principal"-->
+        <section id="menu"> <!-- Este section contiene el menu que lleva a cada pagina y los indices correspondientes de la pagina en la que te encuentras -->
             <h2>Menú</h2>
             <nav>
                 <a href="index.html">Inicio</a>
@@ -31,10 +31,11 @@
                 <li><a href="#preformateado">Texto preformateado</a></li>
                 <li><a href="#listas">Listas</a></li>
                 <li><a href="#lineaHorizontal">Lineas horizontales</a></li>
+                <li><a href="#tablas">Tablas</a></li>
             </ol>
         </section>
     
-        <section id="principal">
+        <section id="principal"> <!-- Este section se encarga del resto de contenido de la pagina. -->
             <article id="titulos">
                 <h2>Títulos</h2>
 
@@ -84,7 +85,7 @@
                     "li" para los elementos que queramos poner dentro de las lista.</p>
                 <p>A continuación vamos a ver unos ejemplos:</p>
                 
-                <div id="ejemploTablas">
+                <div id="ejemploListas">
                 <div class="ejemploLista">
                     <h4>Lista ordenada</h4>
                     <ol>
@@ -107,7 +108,7 @@
             <article id="lineaHorizontal">
                 <h2>Línea horizontal</h2>
 
-                <p>El último elemento que vamos a ver en el apartado de elementos básicos son las lineas horizontales. Estas lineas nos sirven como
+                <p>Otro elemento que vamos a ver son las lineas horizontales. Estas lineas nos sirven como
                     separadores para diferenciar entre diferentes parrafos en por ejemplo literatura, listados, etc...
                 </p>
                 <p>Para ello es tan fácil como usar la etiqueta "hr". A continuacion veremos un ejemplo:</p>
@@ -120,13 +121,83 @@
                     Maecenas posuere commodo orci, at vestibulum velit iaculis eu. Quisque in dapibus arcu. Vivamus vel ante sit amet nibh tincidunt molestie. 
                     Integer ultricies libero vulputate, maximus neque in, consectetur lorem.</p> 
                     <hr>
-                    <p>In fringilla vel lorem id aliquam. Mauris eget metus lobortis, venenatis felis vel, iaculis lacus. 
-                        Phasellus a leo tempus lorem aliquet efficitur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                        Morbi varius vehicula ultrices. Duis a magna justo. Vestibulum hendrerit dolor sed iaculis egestas. 
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed luctus dictum ante, in euismod ante egestas a. 
-                        Sed in tempor justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut in facilisis lectus. Suspendisse vitae urna lectus. 
-                        Nullam vitae nisl vel urna tincidunt tincidunt vel vitae tortor.</p>
+                <p>In fringilla vel lorem id aliquam. Mauris eget metus lobortis, venenatis felis vel, iaculis lacus. 
+                    Phasellus a leo tempus lorem aliquet efficitur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                    Morbi varius vehicula ultrices. Duis a magna justo. Vestibulum hendrerit dolor sed iaculis egestas. 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed luctus dictum ante, in euismod ante egestas a. 
+                    Sed in tempor justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut in facilisis lectus. Suspendisse vitae urna lectus. 
+                    Nullam vitae nisl vel urna tincidunt tincidunt vel vitae tortor.</p>
                 </div>
+            </article>
+
+            <article id="tablas">
+                <h2>Tablas</h2>
+                <p>El último elemento que vamos a ver en esta sección son las tablas. Las tablas es uno de los elementos básicos más importantes para gestionar contenido
+                    en una página web. Lo primero es definir el contenedor tabla con la etiqueta "table". Dentro de este contenedor definiremos los distintos elementos, en este ejemplo
+                    vamos a definir la cabecera con "thead" y el cuerpo con "tbody". Y dentro de estas etiquetas usaremos "tr" para las filas y "td" o "th" para los datos que queramos insertar.
+                </p>
+                <p>Como ejemplo, vamos a realizar el horario de nuestro grado superior DAM:</p>
+                <table border="1px" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="neutro">8:25</td>
+                            <td class="celdaBD" rowspan="2">BD</td>
+                            <td class="celdaED" rowspan="2">ED</td>
+                            <td class="celdaLM" rowspan="2">LM</td>
+                            <td class="celdaIN">IN</td>
+                            <td class="celdaSI" rowspan="2">SI</td>
+                        </tr>
+                        <tr>
+                            <td class="neutro">9:20</td>
+                            <td class="celdaBD" rowspan="2">BD</td>
+                        </tr>
+                        <tr>
+                            <td class="neutro">10:15</td>
+                            <td class="celdaPRO">PRO</td>
+                            <td class="celdaFOL">FOL</td>
+                            <td class="celdaSI">SI</td>
+                            <td class="celdaPRO">PRO</td>
+                        </tr>
+                        <tr>
+                            <td class="neutro">11:05</td>
+                            <td class="neutro">Recreo</td>
+                            <td class="neutro">Recreo</td>
+                            <td class="neutro">Recreo</td>
+                            <td class="neutro">Recreo</td>
+                            <td class="neutro">Recreo</td>
+                        </tr>
+                        <tr>
+                            <td class="neutro">11:35</td>
+                            <td class="celdaPRO" rowspan="2">PRO</td>
+                            <td class="celdaSI">SI</td>
+                            <td class="celdaSI">SI</td>
+                            <td class="celdaFOL">FOL</td>
+                            <td class="celdaPRO" rowspan="2">PRO</td>
+                        </tr>
+                        <tr>
+                            <td class="neutro">12:30</td>
+                            <td class="celdaPRO" rowspan="2">PRO</td>
+                            <td class="celdaBD" rowspan="2">BD</td>
+                            <td class="celdaLM">LM</td>
+                        </tr>
+                        <tr>
+                            <td class="neutro">13:25</td>
+                            <td class="celdaIN">IN</td>
+                            <td class="celdaED">ED</td>
+                            <td class="celdaFOL">FOL</td>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
             <div id="btn"><a href="#titulos">Vuelve al principio</a></div>
         </div>

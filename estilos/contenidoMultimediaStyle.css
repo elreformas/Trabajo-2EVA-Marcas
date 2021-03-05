@@ -51,12 +51,12 @@ a,p,li {
     border-radius: 10px;
 }
 
-#img1 {
+.img1 {
     width: 100%;
     height: auto;
 }
 
-#saltosLinea {
+.ejemploVideos {
     display: flex;
     flex-direction: column;
 }
@@ -88,12 +88,9 @@ li {
     height: auto;
 }
 
-#ejemploMapa {
+#ejmvideo {
     display: flex;
-    flex-direction: row;
-}
-
-#imgMap {
+    flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 315px;
 }

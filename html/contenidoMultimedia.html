@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual - Contenido multimedia</title>
-    <link rel="stylesheet" type="text/css" href="../estilos/contenidoMultimediaStyle.css">
+    <link rel="stylesheet" type="text/css" href="../estilos/contenidoMultimediaStyle.css"> <!-- Link a la hoja de estilos que se debe aplicar a este documento. -->
     <link rel="shortcut icon" href="../Imagenes/manual-icon.png">
 </head>
 <body>
-    <main>
-        <section id="menu">
+    <main> <!-- Dividimos el main en dos contenedores: el section con id "menu" y el section con id "principal"-->
+        <section id="menu"> <!-- Este section contiene el menu que lleva a cada pagina y los indices correspondientes de la pagina en la que te encuentras -->
             <h2>Menú</h2>
             <nav>
                 <a href="index.html">Inicio</a>
@@ -26,12 +26,11 @@
             <h2 id="contenidos">Contenidos</h2>
             <ol id="listaIndice">
                 <li><a href="#imagenes">Inserción de imágenes</a></li>
-                <li><a href="#videos">Mapas de imagen</a></li>
-                <li><a href="#enlaces">Hiperenlaces</a></li>
+                <li><a href="#videos">Inserción de vídeos</a></li>
             </ol>
         </section>
 
-        <section id="principal">
+        <section id="principal"> <!-- Este section se encarga del resto de contenido de la pagina. -->
             <article id="imagenes">
                 <h2>Inserción de imágenes</h2>
                 <p>En esta sección vamos a ver los diferentes tipos de contenido encajado que podemos ver en una página web.
@@ -40,7 +39,7 @@
                 </p>
                 <p>Por ejemplo:</p>
                 <div id="ejemploImagenes">
-                    <img id="img1" src="../Imagenes/img1.png">
+                    <img class="img1" src="../Imagenes/img1.png">
                 </div>
                 <p>En general podemos insertar cualquier tipo de formato de imagen, por ejemplo tambien podemos insertar GIFS.</p>
                 <p>Por ejemplo:</p>
@@ -51,8 +50,35 @@
             </article>
 
             <article id="videos">
-                
+                <h2>Inserción de vídeos</h2>
+                <p>Otro elemento a destacar son los vídeos. Podemos insertar vídeos de diferentes fuentes como por ejemplo de otras paginas como YouTube,Twitch o tambien videos 
+                    que tengamos de forma local. En este ejemplo vamos a ver como insertar un video de YouTube.
+                </p>
+                <h3>Primer paso</h3>
+                <p>Insertar videos de esa plataforma es muy sencillo ya que ellos mismos te dan la herramienta necesaria. Es tan sencillo como dirigirnos
+                    al video que queramos insertar. Una vez ahi haremos click en la opcion de compartir:
+                </p>
+                <div class="ejemploVideos">
+                    <img class="img1" src="../Imagenes/ejemploVideo1.PNG">
+                </div>
+                <h3>Segundo paso</h3>
+                <p>Se nos abrirá una nueva ventana con diferentes opciones. Haremos click en la opcion de "Insertar":</p>  
+                <div class="ejemploVideos">
+                    <img id="img2" class="img1" src="../Imagenes/ejemploVideo2.PNG">
+                </div> 
+                <h3>Tercer paso</h3>
+                <p>Por ultimo nos aparecerá una ventana mas, seleccionamos toda la seccion de codigo y la insertarmos en el lugar que queramos de nuestra página. Tan facil como
+                    seguir estos tres pasos y ya podremos ver nuestro video insertado.
+                </p> 
+                <div class="ejemploVideos">
+                    <img class="img1" src="../Imagenes/ejemploVideo3.PNG">
+                </div>
+                <h3>Resultado final:</h3>
+                <div class="ejemploVideos">
+                    <iframe id="ejmvideo" src="https://www.youtube.com/embed/oUivYMwPRNM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </article>
+            <div id="btn"><a href="#imagenes">Vuelve al principio</a></div>
         </section>
     </main>
 </body>
